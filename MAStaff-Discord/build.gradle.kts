@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("es.angelillo15:MAStaff-API:2.1.0-beta4")
+    compileOnly("es.angelillo15:MAStaff-API:2.1.0-beta7")
     compileOnly("org.yaml:snakeyaml:1.33")
     compileOnly("com.github.Carleslc.Simple-YAML:Simple-Yaml:1.8.3")
     compileOnly("org.spigotmc:spigot-api:1.13-R0.1-SNAPSHOT")
