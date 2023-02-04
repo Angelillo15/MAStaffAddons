@@ -1,4 +1,4 @@
-package es.angelillo15.mast.module.discord.bukkit.utils;
+package es.angelillo15.mast.module.discord.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

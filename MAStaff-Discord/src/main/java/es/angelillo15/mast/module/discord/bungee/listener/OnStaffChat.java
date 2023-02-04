@@ -1,39 +1,34 @@
-package es.angelillo15.mast.module.discord.bukkit.listener;
+package es.angelillo15.mast.module.discord.bungee.listener;
 
-import es.angelillo15.mast.api.event.bukkit.staff.StaffChatTalkEvent;
+import es.angelillo15.mast.api.chat.api.ChatColor;
+import es.angelillo15.mast.api.event.bungee.staffchat.StaffChatTalkEvent;
 import es.angelillo15.mast.module.discord.common.Config;
-import es.angelillo15.mast.module.discord.bukkit.MAStaffDiscord;
 import es.angelillo15.mast.module.discord.common.DiscordWebhook;
 import lombok.SneakyThrows;
-import org.bukkit.ChatColor;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
+import net.md_5.bungee.api.plugin.Listener;
+import net.md_5.bungee.event.EventHandler;
 
 import java.io.IOException;
 
-public class OnStaffChatMessage implements Listener {
-    public OnStaffChatMessage() {
-        MAStaffDiscord.getPlogger().debug("OnStaffChatMessage listener loaded!");
-    }
-
+public class OnStaffChat implements Listener {
     @SneakyThrows
     @EventHandler
-    public void onStaffChat(StaffChatTalkEvent event) {
-        MAStaffDiscord.getPlogger().debug("StaffChat event triggered!");
+    public void onStaffChatTalk(StaffChatTalkEvent event){
         DiscordWebhook webhook = new DiscordWebhook(Config.StaffChat.getWebhookUrl());
 
         webhook.setUsername(Config.StaffChat.getWebhookName().replace("{player}",
-                event.getSender().getName())
+                event.getPlayer().getName())
         );
 
         webhook.setAvatarUrl(Config.StaffChat.getWebhookAvatar().replace("{player}",
-                event.getSender().getName())
+                event.getPlayer().getName())
         );
 
         webhook.setContent(Config.StaffChat.getWebhookMessage().replace("{player}",
-                event.getSender().getName())
+                        event.getPlayer().getName())
                 .replace("{message}", ChatColor.stripColor(event.getMessage()))
         );
+
 
         new Thread(() -> {
             try {
