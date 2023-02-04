@@ -1,6 +1,7 @@
-package es.angelillo15.mast.module.discord;
+package es.angelillo15.mast.module.discord.bukkit;
 
 import es.angelillo15.mast.api.TextUtils;
+import es.angelillo15.mast.module.discord.common.Config;
 
 public class MAStaffDiscordLoader extends MAStaffDiscord {
     @Override

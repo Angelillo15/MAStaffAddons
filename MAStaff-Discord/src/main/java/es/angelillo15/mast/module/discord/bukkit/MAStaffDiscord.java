@@ -1,8 +1,8 @@
-package es.angelillo15.mast.module.discord;
+package es.angelillo15.mast.module.discord.bukkit;
 
 import es.angelillo15.mast.api.ILogger;
 import es.angelillo15.mast.api.addons.MAStaffAddon;
-import es.angelillo15.mast.module.discord.listener.OnStaffChatMessage;
+import es.angelillo15.mast.module.discord.bukkit.listener.OnStaffChatMessage;
 import lombok.Getter;
 
 public class MAStaffDiscord extends MAStaffAddon {

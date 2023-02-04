@@ -1,9 +1,9 @@
-package es.angelillo15.mast.module.discord.listener;
+package es.angelillo15.mast.module.discord.bukkit.listener;
 
 import es.angelillo15.mast.api.event.bukkit.staff.StaffChatTalkEvent;
-import es.angelillo15.mast.module.discord.Config;
-import es.angelillo15.mast.module.discord.MAStaffDiscord;
-import es.angelillo15.mast.module.discord.utils.DiscordWebhook;
+import es.angelillo15.mast.module.discord.common.Config;
+import es.angelillo15.mast.module.discord.bukkit.MAStaffDiscord;
+import es.angelillo15.mast.module.discord.bukkit.utils.DiscordWebhook;
 import lombok.SneakyThrows;
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;

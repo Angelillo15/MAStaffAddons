@@ -1,4 +1,4 @@
-package es.angelillo15.mast.module.discord;
+package es.angelillo15.mast.module.discord.common;
 
 import lombok.Getter;
 import lombok.Setter;
