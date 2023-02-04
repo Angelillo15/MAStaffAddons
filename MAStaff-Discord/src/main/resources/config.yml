@@ -1,0 +1,28 @@
+#
+#  ███▄ ▄███▓ ▄▄▄        ██████ ▄▄▄█████▓ ▄▄▄        █████▒ █████▒
+#  ▓██▒▀█▀ ██▒▒████▄    ▒██    ▒ ▓  ██▒ ▓▒▒████▄    ▓██   ▒▓██   ▒
+#  ▓██    ▓██░▒██  ▀█▄  ░ ▓██▄   ▒ ▓██░ ▒░▒██  ▀█▄  ▒████ ░▒████ ░
+#  ▒██    ▒██ ░██▄▄▄▄██   ▒   ██▒░ ▓██▓ ░ ░██▄▄▄▄██ ░▓█▒  ░░▓█▒  ░
+#  ▒██▒   ░██▒ ▓█   ▓██▒▒██████▒▒  ▒██▒ ░  ▓█   ▓██▒░▒█░   ░▒█░
+#  ░ ▒░   ░  ░ ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░  ▒ ░░    ▒▒   ▓▒█░ ▒ ░    ▒ ░
+#  ░  ░      ░  ▒   ▒▒ ░░ ░▒  ░ ░    ░      ▒   ▒▒ ░ ░      ░
+#  ░      ░     ░   ▒   ░  ░  ░    ░        ░   ▒    ░ ░    ░ ░
+#  ░         ░  ░      ░                 ░  ░
+#
+# Welcome to MAStaff-Discord's configuration file!
+# Here you can configure what you want to be displayed in the Discord webhook.
+# You can also configure the webhook URL and the bot name.
+# You can also configure the bot avatar.
+#
+# Remember to join my Discord server if you need help: https://discord.nookure.com/
+#
+# Discord configuration for the plugin.
+StaffChat:
+  # The webhook URL to send the messages.
+  webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
+  # The name of the bot that will send the messages.
+  name: "{player}"
+  # The avatar of the bot that will send the messages.
+  avatar: "https://minotar.net/helm/{player}/600.png"
+  # The message that will be sent when a player sends a message in the staff chat.
+  message: "**{player}** » {message}"
