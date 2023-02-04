@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("com.github.johnrengelman.shadow") version "4.0.4"
 }
 
 group = "es.angelillo15"
@@ -18,10 +19,17 @@ dependencies {
     compileOnly("org.yaml:snakeyaml:1.33")
     compileOnly("com.github.Carleslc.Simple-YAML:Simple-Yaml:1.8.3")
     compileOnly("org.spigotmc:spigot-api:1.13-R0.1-SNAPSHOT")
+    compileOnly("org.projectlombok:lombok:1.18.26")
+    annotationProcessor("org.projectlombok:lombok:1.18.26")
 }
 
 tasks.processResources {
     filesMatching("addon.properties") {
-        expand("version" to (parent?.version ?: project.version))
+        expand("version" to (project.version))
     }
+}
+
+tasks.shadowJar {
+    relocate("org.yaml.snakeyaml", "es.angelillo15.mast.libs.snakeyaml")
+    relocate("org.simpleyaml", "es.angelillo15.mast.libs.simpleyaml")
 }
