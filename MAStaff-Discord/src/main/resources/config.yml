@@ -18,6 +18,8 @@
 #
 # Discord configuration for the plugin.
 StaffChat:
+  # Enable or disable the webhook.
+  enabled: true
   # The webhook URL to send the messages.
   webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
   # The name of the bot that will send the messages.
@@ -26,3 +28,36 @@ StaffChat:
   avatar: "https://minotar.net/helm/{player}/600.png"
   # The message that will be sent when a player sends a message in the staff chat.
   message: "**{player}** » {message}"
+StaffJoin:
+  # Enable or disable the webhook.
+  enable: true
+  # The webhook URL to send the messages.
+  webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
+  # The name of the bot that will send the messages.
+  name: "Staff Join"
+  # The avatar of the bot that will send the messages.
+  avatar: "https://minotar.net/helm/{player}/600.png"
+  # The message that will be sent when a player joins the server.
+  message: "**{player}** joined the server."
+StaffLeave:
+  # Enable or disable the webhook.
+  enable: true
+  # The webhook URL to send the messages.
+  webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
+  # The name of the bot that will send the messages.
+  name: "Staff Leave"
+  # The avatar of the bot that will send the messages.
+  avatar: "https://minotar.net/helm/{player}/600.png"
+  # The message that will be sent when a player leaves the server.
+  message: "**{player}** left the server."
+StaffSwitch:
+  # Enable or disable the webhook.
+  enable: true
+  # The webhook URL to send the messages.
+  webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
+  # The name of the bot that will send the messages.
+  name: "Staff Switch"
+  # The avatar of the bot that will send the messages.
+  avatar: "https://minotar.net/helm/{player}/600.png"
+  # The message that will be sent when a player switches the server.
+  message: "**{player}** switched from {previous_server} to {server}."
