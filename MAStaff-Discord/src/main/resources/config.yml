@@ -61,3 +61,47 @@ StaffSwitch:
   avatar: "https://minotar.net/helm/{player}/600.png"
   # The message that will be sent when a player switches the server.
   message: "**{player}** switched from {previous_server} to {server}."
+StaffEnable:
+  # Enable or disable the webhook.
+  enable: true
+  # The webhook URL to send the messages.
+  webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
+  # The name of the bot that will send the messages.
+  name: "Staff Enable"
+  # The avatar of the bot that will send the messages.
+  avatar: "https://minotar.net/helm/{player}/600.png"
+  # The message that will be sent when a player enables the staff mode.
+  message: "**{player}** enabled the staff mode."
+StaffDisable:
+  # Enable or disable the webhook.
+  enable: true
+  # The webhook URL to send the messages.
+  webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
+  # The name of the bot that will send the messages.
+  name: "Staff Disable"
+  # The avatar of the bot that will send the messages.
+  avatar: "https://minotar.net/helm/{player}/600.png"
+  # The message that will be sent when a player disables the staff mode.
+  message: "**{player}** disabled the staff mode."
+Freeze:
+  # Enable or disable the webhook.
+  enable: true
+  # The webhook URL to send the messages.
+  webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
+  # The name of the bot that will send the messages.
+  name: "Staff Freeze"
+  # The avatar of the bot that will send the messages.
+  avatar: "https://minotar.net/helm/{player}/600.png"
+  # The message that will be sent when a player freezes a player.
+  message: "**{player}** froze **{target}**."
+Unfreeze:
+  # Enable or disable the webhook.
+  enable: true
+  # The webhook URL to send the messages.
+  webhook: "https://discord.com/api/webhooks/1234567890/1234567890"
+  # The name of the bot that will send the messages.
+  name: "Staff Unfreeze"
+  # The avatar of the bot that will send the messages.
+  avatar: "https://minotar.net/helm/{player}/600.png"
+  # The message that will be sent when a player unfreezes a player.
+  message: "**{player}** unfroze **{target}**."
