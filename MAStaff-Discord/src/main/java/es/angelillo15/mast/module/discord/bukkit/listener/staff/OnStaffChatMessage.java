@@ -1,4 +1,4 @@
-package es.angelillo15.mast.module.discord.bukkit.listener;
+package es.angelillo15.mast.module.discord.bukkit.listener.staff;
 
 import es.angelillo15.mast.api.event.bukkit.staff.StaffChatTalkEvent;
 import es.angelillo15.mast.module.discord.common.Config;
