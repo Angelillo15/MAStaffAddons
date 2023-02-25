@@ -8,15 +8,16 @@ import es.angelillo15.mast.module.discord.bukkit.listener.staff.*;
 import es.angelillo15.mast.module.discord.common.Config;
 import lombok.Getter;
 import org.bukkit.event.Listener;
+import org.bukkit.plugin.java.JavaPlugin;
 
-public class MAStaffDiscord extends MAStaffAddon {
+public class MAStaffDiscord extends MAStaffAddon<JavaPlugin> {
     @Getter
-    private static ILogger Plogger;
+    private static ILogger plogger;
 
     @Override
     public void onEnable() {
         super.onEnable();
-        Plogger = getLogger();
+        plogger = getLogger();
     }
 
     public void loadListeners() {

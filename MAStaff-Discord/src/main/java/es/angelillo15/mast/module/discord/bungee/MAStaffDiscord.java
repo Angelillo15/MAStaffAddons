@@ -1,6 +1,6 @@
 package es.angelillo15.mast.module.discord.bungee;
 
-import es.angelillo15.mast.api.addons.bungee.MAStaffBungeeAddon;
+import es.angelillo15.mast.api.addons.MAStaffAddon;
 import es.angelillo15.mast.api.chat.api.ChatColor;
 import es.angelillo15.mast.module.discord.bungee.listener.OnJoin;
 import es.angelillo15.mast.module.discord.bungee.listener.OnLeave;
@@ -8,8 +8,9 @@ import es.angelillo15.mast.module.discord.bungee.listener.OnStaffChat;
 import es.angelillo15.mast.module.discord.bungee.listener.OnSwitch;
 import es.angelillo15.mast.module.discord.common.Config;
 import net.md_5.bungee.api.plugin.Listener;
+import net.md_5.bungee.api.plugin.Plugin;
 
-public class MAStaffDiscord extends MAStaffBungeeAddon {
+public class MAStaffDiscord extends MAStaffAddon<Plugin> {
     @Override
     public void onEnable() {
         getLogger().info(ChatColor.translateAlternateColorCodes('&', "MAStaff-Discord has been enabled!"));
